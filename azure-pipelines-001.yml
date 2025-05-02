@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool: 
+    name: Default 
+
+variables:
+    buildconfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+    displayname:'dotnet build $(buildConfiguration)'
