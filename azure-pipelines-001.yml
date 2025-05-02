@@ -1,8 +1,11 @@
 trigger:
 - main
 
-pool: 
-    name: Default 
+#pool: 
+#    name: Default 
+pool:
+  vmImage: 'ubuntu-latest'  # or 'windows-latest', etc.
+
 
 variables:
     buildconfiguration: 'Release'
